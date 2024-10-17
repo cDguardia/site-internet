@@ -11,6 +11,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				margin-top: 50px;
+			}
+			.brillant {
+				display: inline-block;
+				position: relative;
+				color: #f7f7f7;
+				transition: color 0.3s ease;
+			}
+			brillant::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(226, 236, 233, 0.096);
+				transform: scale(0);
+				transition: transform 0.3s ease;
+				pointer-events: none;
+			}
+			.brillant:hover {
+				color: #00eef7; /* Change la couleur du texte */
+			}
+			.brillant:hover::after {
+				transform: scale(1);
+			}
+			{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cliquable {
+            display: inline-block;
+            position: relative;
+            color: #ffffff;
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cliquable.clicked {
+            transform: scale(1.2) rotate(10deg); /* Zoom et rotation */
+            color: #d400ff; /* Changement de couleur */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+        }
+		</style>
+	
 	</head>
 	<body class="is-preload">
 
@@ -44,8 +93,8 @@
 					<section id="banner">
 						<div class="inner">
 							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							<h2>Site de présentation </h2>
+							<p class="brillant">Cybersécurité</p>
 						</div>
 					</section>
 
@@ -57,8 +106,8 @@
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+										<h2 class="major">Semestre 1</h2>
+										<p class="brillant">Introduction à la cyber</p>
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
@@ -69,8 +118,8 @@
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+										<h2 class="major">Semestre 1</h2>
+										<p class="brillant">Techniques de pentest & hacking éthique</p>
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
@@ -81,8 +130,8 @@
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+										<h2 class="major">Semestre 1</h2>
+										<p>Techniques de la recherche d’informations</p>
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
@@ -91,8 +140,9 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h2 class="major">découvrer en plus </h2>
+									
+									<p class="cliquable" id="texte">attention clique ici!</p>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
@@ -178,6 +228,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				const texte = document.getElementById('texte');
+		
+				texte.addEventListener('click', () => {
+					texte.classList.toggle('clicked');
+					setTimeout(() => {
+						texte.classList.toggle('clicked');
+					}, 400); // Dure environ 300 ms
+				});
+			</script>
 	</body>
 </html>
