@@ -1,108 +1,121 @@
-<contact.html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Contact - Solid State par HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			@keyframes fadeIn {
-				0% { opacity: 0; transform: translateY(20px); }
-				100% { opacity: 1; transform: translateY(0); }
-			}
-			.fade-in {
-				animation: fadeIn 0.5s ease forwards;
-			}
-		</style>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Contact - Solid State par HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        .contact-image {
+            display: block; /* Pour centrer l'image */
+            width: 40%; /* Prend 40% de la largeur */
+            height: auto; /* Hauteur automatique pour garder les proportions */
+            margin: 20px auto; /* Centre l'image horizontalement */
+            border-radius: 15px; /* Bords arrondis */
+            object-fit: cover; /* Ajuste l'image pour couvrir l'espace sans déformation */
+        }
+    </style>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<!-- Page Wrapper -->
+<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="fade-in">
-						<h1><a href="index.html">page de contact</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <!-- Header -->
+    <header id="header" class="fade-in">
+        <h1><a href="index.html">Page de Contact</a></h1>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-                        <div class="inner">
-                            <h2>Menu</h2>
-                            <ul class="links">
-                                <li><a href="index.html">Accueil</a></li>
-                                <li><a href="generic.html">À propos</a></li>
-                                <li><a href="elements.html">Projets</a></li>
-                                <li><a href="contact.html">Contact</a></li> 
-                            </ul>
-                            <a href="#" class="close">Fermer</a>
+    <!-- Menu -->
+    <nav id="menu">
+        <div class="inner fade-in">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="generic.html">À propos</a></li>
+                <li><a href="elements.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#" class="close">Fermer</a>
+        </div>
+    </nav>
+
+    <!-- Wrapper -->
+    <section id="wrapper" class="fade-in">
+        <header>
+            <div class="inner">
+                <h2>Contact</h2>
+                <p>Contactez-moi pour plus d'informations.</p>
+            </div>
+        </header>
+
+        <!-- Image Section -->
+        <div class="fade-in">
+            <img src="images/contact-image.jpg" alt="Image de Contact" class="contact-image" />
+        </div>
+
+        <!-- Footer -->
+        <section id="footer" class="fade-in">
+            <div class="inner">
+                <h2 class="major">Restons en contact</h2>
+                <p>Pour suivre mes projets et mon évolution dans le domaine de la cybersécurité :</p>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" id="name" />
                         </div>
-                    </nav>
-
-				<!-- Wrapper -->
-					<section id="wrapper" class="fade-in">
-						<header>
-							<div class="inner">
-								<h2>Contact</h2>
-								<p>Contactez-moi pour plus d'informations.</p>
-							</div>
-						</header>
-                    
-
-				<!-- Footer -->
-                <section id="footer">
-                    <div class="inner">
-                        <h2 class="major">Restons en contact</h2>
-                        <p>Pour suivre mes projets et mon évolution dans le domaine de la cybersécurité :</p>
-                        <form method="post" action="#">
-                            <div class="fields">
-                                <div class="field">
-                                    <label for="name">Nom</label>
-                                    <input type="text" name="name" id="name" />
-                                </div>
-                                <div class="field">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" />
-                                </div>
-                                <div class="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="4"></textarea>
-                                </div>
-                            </div>
-                            <ul class="actions">
-                                <li><input type="submit" value="Envoyer le message" /></li>
-                            </ul>
-                        </form>
-                        <ul class="contact">
-                            <li class="icon solid fa-home">
-                                Mon Adresse<br />
-                                22 Terr. Bellini, 92800 Puteaux
-                            </li>
-                            <li class="icon solid fa-envelope"><a href="#">cduval@guardiaschool.fr</a></li>
-                            <li class="icon brands fa-twitter"><a href="#">twitter.com/cduval</a></li>
-                            <li class="icon brands fa-facebook-f"><a href="#">facebook.com/cduval</a></li>
-                            <li class="icon brands fa-instagram"><a href="#">instagram.com/cduval</a></li>
-                        </ul>
-                        <ul class="copyright">
-                            <li>&copy; Mon Nom. Tous droits réservés.</li>
-                            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                        </ul>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
                     </div>
-                </section>
+                    <ul class="actions">
+                        <li><input type="submit" value="Envoyer le message" /></li>
+                    </ul>
+                </form>
+                <ul class="contact">
+                    <li class="icon solid fa-home">
+                        Mon Adresse<br />
+                        22 Terr. Bellini, 92800 Puteaux
+                    </li>
+                    <li class="icon solid fa-envelope"><a href="#">cduval@guardiaschool.fr</a></li>
+                    <li class="icon brands fa-twitter"><a href="#">twitter.com/cduval</a></li>
+                    <li class="icon brands fa-facebook-f"><a href="#">facebook.com/cduval</a></li>
+                    <li class="icon brands fa-instagram"><a href="#">instagram.com/cduval</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Mon Nom. Tous droits réservés.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
 
-			</div>
+</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
