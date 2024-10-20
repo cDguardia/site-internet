@@ -4,47 +4,43 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Solid State by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				text-align: center;
-				margin-top: 50px;
-			}
-			.brillant {
-				display: inline-block;
-				position: relative;
-				color: #f7f7f7;
-				transition: color 0.3s ease;
-			}
-			brillant::after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background: rgba(226, 236, 233, 0.096);
-				transform: scale(0);
-				transition: transform 0.3s ease;
-				pointer-events: none;
-			}
-			.brillant:hover {
-				color: #00eef7; /* Change la couleur du texte */
-			}
-			.brillant:hover::after {
-				transform: scale(1);
-			}
-			{
+<head>
+    <title>Mon Portfolio en Cybersécurité</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+        }
+        .brillant {
+            display: inline-block;
+            position: relative;
+            color: #f7f7f7;
+            transition: color 0.3s ease;
+        }
+        .brillant::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(226, 236, 233, 0.096);
+            transform: scale(0);
+            transition: transform 0.3s ease;
+            pointer-events: none;
+        }
+        .brillant:hover {
+            color: #00eef7;
+        }
+        .brillant:hover::after {
+            transform: scale(1);
         }
         .cliquable {
             display: inline-block;
@@ -54,178 +50,159 @@
             transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
         }
         .cliquable.clicked {
-            transform: scale(1.2) rotate(10deg); /* Zoom et rotation */
-            color: #d400ff; /* Changement de couleur */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+            transform: scale(1.2) rotate(10deg);
+            color: #d400ff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
-		</style>
-	
-	</head>
-	<body class="is-preload">
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <header id="header" class="alt">
+            <h1><a href="index.html">Mon Portfolio</a></h1>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                <ul class="links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="generic.html">À propos</a></li>
+                    <li><a href="elements.html">Projets</a></li>
+                    <!--<li><a href="#">Contact</a></li>-->
+                </ul>
+                <a href="#" class="close">Fermer</a>
+            </div>
+        </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <section id="banner">
+            <div class="inner">
+                <div class="logo"><span class="icon fa-gem"></span></div>
+                <h2>Site de présentation</h2> <!-- Réintégré ici -->
+                <p class="brillant">Mon Parcours en Cybersécurité</p>
+            </div>
+        </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+        <section id="wrapper">
+            <section id="one" class="wrapper spotlight style1">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="Introduction à la cybersécurité" /></a>
+                    <div class="content">
+                        <h2 class="major">Semestre 1</h2>
+                        <p class="brillant">Introduction à la cybersécurité</p>
+                        <a href="#" class="special">En savoir plus</a>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>Site de présentation </h2>
-							<p class="brillant">Cybersécurité</p>
-						</div>
-					</section>
+            <section id="two" class="wrapper alt spotlight style2">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic02.jpg" alt="Techniques de pentesting" /></a>
+                    <div class="content">
+                        <h2 class="major">Semestre 2</h2>
+                        <p class="brillant">Techniques de pentesting et hacking éthique</p>
+                        <a href="#" class="special">En savoir plus</a>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+            <section id="three" class="wrapper spotlight style3">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic03.jpg" alt="Recherche d'informations" /></a>
+                    <div class="content">
+                        <h2 class="major">Semestre 3</h2>
+                        <p>Techniques de recherche d’informations</p>
+                        <a href="#" class="special">En savoir plus</a>
+                    </div>
+                </div>
+            </section>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Semestre 1</h2>
-										<p class="brillant">Introduction à la cyber</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+            <section id="four" class="wrapper alt style1">
+                <div class="inner">
+                    <h2 class="major">Projets et réalisations</h2>
+                    <p class="cliquable" id="texte">Cliquez ici pour en savoir plus sur mes projets !</p>
+                    <section class="features">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic04.jpg" alt="Projet 1" /></a>
+                            <h3 class="major">Analyse de vulnérabilités</h3>
+                            <p>Étude approfondie des vulnérabilités des systèmes d'information.</p>
+                            <a href="#" class="special">En savoir plus</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic05.jpg" alt="Projet 2" /></a>
+                            <h3 class="major">Développement d'outils de sécurité</h3>
+                            <p>Création d'outils pour automatiser les tests de sécurité.</p>
+                            <a href="#" class="special">En savoir plus</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic06.jpg" alt="Projet 3" /></a>
+                            <h3 class="major">Sensibilisation à la cybersécurité</h3>
+                            <p>Ateliers et formations pour sensibiliser aux bonnes pratiques.</p>
+                            <a href="#" class="special">En savoir plus</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="Projet 4" /></a>
+                            <h3 class="major">Audit de sécurité</h3>
+                            <p>Évaluations de la sécurité des systèmes d'information d'entreprises.</p>
+                            <a href="#" class="special">En savoir plus</a>
+                        </article>
+                    </section>
+                    <ul class="actions">
+                        <li><a href="#" class="button">Consulter tous mes projets</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Semestre 1</h2>
-										<p class="brillant">Techniques de pentest & hacking éthique</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major">Restons en contact</h2>
+                <p>Pour suivre mes projets et mon évolution dans le domaine de la cybersécurité :</p>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Envoyer le message" /></li>
+                    </ul>
+                </form>
+                <ul class="contact">
+                    <li class="icon solid fa-home">
+                        Mon Adresse<br />
+                        22 Terr. Bellini, 92800 Puteaux
+                    </li>
+                    <li class="icon solid fa-envelope"><a href="#">cduval@guardiaschool.fr</a></li>
+                    <li class="icon brands fa-twitter"><a href="#">twitter.com/cduval</a></li>
+                    <li class="icon brands fa-facebook-f"><a href="#">facebook.com/cduval</a></li>
+                    <li class="icon brands fa-instagram"><a href="#">instagram.com/cduval</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Mon Nom. Tous droits réservés.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Semestre 1</h2>
-										<p>Techniques de la recherche d’informations</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">découvrer en plus </h2>
-									
-									<p class="cliquable" id="texte">attention clique ici!</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
